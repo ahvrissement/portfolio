@@ -2,6 +2,12 @@
 
 <h1> Portfólio </h1>
 
+<div align="center">
+  <a href="https://portfolio-d5wf.vercel.app/">
+    <img src=assets/ex.png alt="Logo" width=100%>
+  </a>
+</div>
+
 <p> Feito a partir dos conhecimentos adquiridos no curso de HTML/CSS da Alura! </p>
 
 <h2> 🛠️ Construído com </h2>
