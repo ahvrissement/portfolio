@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Caprasimo&family=Montserrat:ital,wght@0,400;0,600;1,400&family=Press+Start+2P&display=swap');
+
+:root {
+    --main-bg-color: #0C134F;
+    --color-1: #D4ADFC;
+    --color-2: #5C469C;
+    --color-hover: #1D267D;
+
+    --fonte-primaria: 'Caprasimo', cursive;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+    --tamanho-fonte: 1.5rem
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+    color: var(--color-1);
+    
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: var(--tamanho-fonte);
+    color: var(--color-2);
+    text-decoration: none;
+}
+
+.apresentacao {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 9.1% 15%;
+    gap: 82px ;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+    
+}
+
+
+.titulo-destaque {
+    color: var(--color-2);
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: var(--tamanho-fonte);
+    font-family: var(--fonte-secundaria);
+}
+
+
+.apresentacao__conteudo__paragrafo a{
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+
+.apresentacao__links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-evenly;
+
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: var(--tamanho-fonte);
+}
+
+.apresentacao__links__nav {
+    border: 2px solid var(--color-2);
+    border-radius: 8px;
+    color: var(--color-1);
+    display: flex;
+    font-size: var(--tamanho-fonte);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600px;
+    gap: 16px;
+    
+    justify-content: center;
+    padding: 21.5px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+}
+
+
+.apresentacao__links__link:hover {
+    background-color: var(--color-hover) ;
+}
+
+.apresentacao__imagem {
+    width: 42%;
+    border-radius: 16px;
+    border: 3px solid #D4ADFC;
+}
+
+p strong {
+    color: var(--color-1);
+}
+
+.rodape {
+    background-color: var(--color-2);
+    color: var(--main-bg-color);
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: var(--tamanho-fonte);
+    font-weight: 600 bold;
+    padding: var(--tamanho-fonte);
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 8%
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
